@@ -14,25 +14,21 @@ const images = [
 ];
 
 
-
-const addEl = document.createElement("li");
-
-const imgEl = document.createElement("img");
-
-addEl.append(imgEl); 
-
-imgEl.scr =  `https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`; 
-imgEl.alt =  `White and Black Long Fur Cat`; 
-
-console.log(addEl)
-
-
-
 const ulEl = document.querySelector(`ul`); 
-console.log(ulEl); 
 
 
-ulEl.append(addEl); 
+images.forEach(image => {
+  const addEl = document.createElement(`li`);
+  const imgEl = document.createElement(`img`);
+  addEl.append(imgEl);
 
+
+  
+  addEl.insertAdjacentHTML('beforeend', `<img src="${image.url }" alt="${image.alt} width">`);
+
+  ulEl.append(addEl)
+
+
+})
 
 
