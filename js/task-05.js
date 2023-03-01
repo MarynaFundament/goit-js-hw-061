@@ -6,4 +6,9 @@
 
   formEl.addEventListener(`input`, (event) => {
     userNameOutputEl.textContent = event.target.value 
+
+    if (event.target.value  === ''){
+      userNameOutputEl.textContent = `Anonymous `
+    }
   })
+
