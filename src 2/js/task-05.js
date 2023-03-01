@@ -5,9 +5,6 @@
   const userNameOutputEl = document.querySelector(`span#name-output`);
   console.log(userNameOutputEl.textContent);
 
-  let empSpan = userNameOutputEl.textContent;
-  console.log(empSpan);
-
   formEl.addEventListener(`input`, handleInputChange)
 
   function handleInputChange(event){
