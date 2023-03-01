@@ -6,7 +6,7 @@ console.log(`Number of categories ${listEl.length}`)
 
 listEl.forEach(element => {
   const categoryName = element.querySelector('h2').textContent;
-  const categoryAmount = element.querySelectorAll('li').length - 1; 
+  const categoryAmount = element.querySelectorAll('li').length; 
   console.log(`Category: ${categoryName} Amount: ${categoryAmount}`);
 
 })
